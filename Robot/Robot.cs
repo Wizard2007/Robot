@@ -39,7 +39,7 @@ namespace Robot
 
         public void Move(double distance)
         { 
-            _robot.Move(distance);
+            //_robot.Move(distance);
             _traceWriter.WriteTrace(string.Format(moveMessageTemplate, distance));           
             return;
         }
@@ -65,7 +65,7 @@ namespace Robot
         {
             return;
         }
-
+        
         void IRobot.Turn(double angle)
         {
             return;
@@ -75,7 +75,5 @@ namespace Robot
         {
             return;
         }
-
-
     }
 }
